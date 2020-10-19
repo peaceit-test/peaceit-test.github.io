@@ -1,0 +1,160 @@
+.header {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &-item {
+            margin-right: 33px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-link {
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-decoration: none;
+            color: $accent;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    //! Почта и телефон в шапке
+    &__mail,
+    &__phone {
+        color: $dark;
+    }
+
+    //! Header middle
+    &__middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        position: relative;
+    }
+    &__action-source {
+        width: 24px;
+        height: 24px;
+    }
+    //! Счетчик товаров
+    .cart-counter {
+        background-color: $secondary-accent;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        font-size: 12px;
+
+        position: absolute;
+        left: -2px;
+        bottom: -2px;
+    }
+    
+    //! Поиск
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+        padding: 5px 15px;
+        border-radius: 12px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: lighten($dark, 75%);
+    }
+
+    .product {
+        &-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 130px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 1px;
+                display: inline-block;
+                background-color: lighten($dark, 75%);
+                right: -15px;
+                top: 0;
+                transform: translateY(1px);
+            }
+        }
+
+        &-item {
+            font-size: 15px;
+            font-weight: 700;
+            color: $dark;
+            line-height: 23px;
+            position: relative;
+
+            .list-arrow-down {
+                @include dfcc;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+
+    .input__search {
+        height: 30px;
+        padding-right: 40px;
+        width: 100%;
+        border: none;
+        font-size: 14px;
+
+        &::placeholder {
+            color: lighten($dark, 25%);
+        }
+    }
+
+    .search-wrap {
+        width: 310px;
+        position: relative;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 10px;
+        transform: translateY(4px);
+
+        &__source {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
