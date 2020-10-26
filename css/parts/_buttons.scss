@@ -45,4 +45,20 @@ a.button {
   &--xs {
     padding: 7px 12px;
   }
+
+  //? Стрелка внутри кнопки
+  &-arrow {
+    height: 100%;
+    width: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+  }
+}
+
+.section__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

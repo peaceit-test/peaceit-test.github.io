@@ -3,8 +3,13 @@
 
 //! Переменные
 @import "parts/vars";
-
 @import "parts/mixins";
+
+//? Компоненты
+@import "components/section-title";
+
+//? Небольшие компоненты
+@import "components/small";
 
 //! Кнопки
 @import "parts/buttons";
@@ -27,5 +32,11 @@
 //! Card
 @import "parts/card";
 
+//! Popular
+@import "parts/populars";
+
 //! Card
 @import "parts/blog-card";
+
+//! Footer
+@import "parts/footer";
