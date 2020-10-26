@@ -1,0 +1,51 @@
+.aside {
+    &-nav {
+        margin-bottom: 150px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    //! Название раздела
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    //! Aside меню
+    &__menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $accent;
+    }
+
+    &__button {
+        padding-left: 0;
+        padding-right: 0;
+
+        .dark-arrow-left img {
+            vertical-align: middle;
+            transform: translateY(-1px);
+        }
+    }
+}
